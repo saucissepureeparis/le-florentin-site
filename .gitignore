@@ -1,0 +1,11 @@
+# Originaux haute résolution (14-41MB chacun)
+assets/img/originals/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~

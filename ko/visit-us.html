@@ -103,10 +103,13 @@
         <div class="story">
           <div class="story__image">
             <picture>
-              <source srcset="/img/facade-florentin-640w.webp 640w, /img/facade-florentin-1024w.webp 1024w" type="image/webp" sizes="(min-width:768px) 45vw, 100vw">
-              <img src="/img/facade-florentin-1024w.jpg"
-                   alt="Le Florentin 레스토랑 외관, 간판이 보이는 파리 거리 풍경"
-                   width="1024" height="768" loading="eager" fetchpriority="high" style="aspect-ratio:4/3;">
+              <source srcset="/assets/img/facade/facade-enseigne-640w.webp 640w, /assets/img/facade/facade-enseigne-1024w.webp 1024w, /assets/img/facade/facade-enseigne-1920w.webp 1920w" sizes="(min-width:768px) 45vw, 100vw" type="image/webp">
+              <img src="/assets/img/facade/facade-enseigne-1024w.jpg"
+                   srcset="/assets/img/facade/facade-enseigne-640w.jpg 640w, /assets/img/facade/facade-enseigne-1024w.jpg 1024w, /assets/img/facade/facade-enseigne-1920w.jpg 1920w"
+                   sizes="(min-width:768px) 45vw, 100vw"
+                   alt="Enseigne extérieure du restaurant Le Florentin, Paris"
+                   width="1024" height="768" loading="eager" fetchpriority="high"
+                   style="aspect-ratio:4/3;">
             </picture>
           </div>
           <div class="story__content">
@@ -141,6 +144,37 @@
         <div style="text-align:center; margin-top:var(--space-md);">
           <a href="https://maps.google.com/?q=Le+Florentin+Paris" class="btn btn--secondary" target="_blank" rel="noopener">Google 지도에서 열기</a>
         </div>
+      </div>
+    </section>
+
+    <!-- AMBIANCE -->
+    <section class="section fade-in" aria-label="테라스 분위기">
+      <div class="container" style="max-width:800px; text-align:center;">
+        <picture>
+          <source srcset="/assets/img/ambiance/espresso-terrasse-640w.webp 640w, /assets/img/ambiance/espresso-terrasse-1024w.webp 1024w, /assets/img/ambiance/espresso-terrasse-1920w.webp 1920w" sizes="(max-width:768px) 100vw, 800px" type="image/webp">
+          <img src="/assets/img/ambiance/espresso-terrasse-1024w.jpg"
+               alt="Le Florentin 브랜드 냅킨이 놓인 실버 트레이 위의 에스프레소, 야외 테라스"
+               width="1024" height="768" loading="lazy"
+               style="aspect-ratio:4/3; border-radius:12px; width:100%; height:auto;">
+        </picture>
+      </div>
+    </section>
+
+    <!-- NEIGHBOURHOOD -->
+    <section class="section section--alt fade-in" aria-label="주변 환경">
+      <div class="container" style="max-width:800px; text-align:center;">
+        <h2>튀일리 정원 지역</h2>
+        <span class="separator"></span>
+        <p style="margin:var(--space-sm) auto var(--space-md);">Le Florentin은 파리에서 가장 아름다운 지역 중 하나인 콩코르드 광장과 튀일리 정원 사이에 위치해 있습니다.</p>
+        <picture>
+          <source srcset="/assets/img/ambiance/tuileries-quartier-640w.webp 640w, /assets/img/ambiance/tuileries-quartier-1024w.webp 1024w, /assets/img/ambiance/tuileries-quartier-1920w.webp 1920w" sizes="(max-width:768px) 100vw, 800px" type="image/webp">
+          <img src="/assets/img/ambiance/tuileries-quartier-1024w.jpg"
+               srcset="/assets/img/ambiance/tuileries-quartier-640w.jpg 640w, /assets/img/ambiance/tuileries-quartier-1024w.jpg 1024w, /assets/img/ambiance/tuileries-quartier-1920w.jpg 1920w"
+               sizes="(max-width:768px) 100vw, 800px"
+               alt="튀일리 정원에서 휴식하는 사람, 레스토랑 근처"
+               width="1024" height="768" loading="lazy"
+               style="aspect-ratio:4/3; border-radius:12px; width:100%; height:auto;">
+        </picture>
       </div>
     </section>
 

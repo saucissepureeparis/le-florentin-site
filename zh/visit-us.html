@@ -110,10 +110,13 @@
         <div class="story">
           <div class="story__image">
             <picture>
-              <source srcset="/img/facade-florentin-640w.webp 640w, /img/facade-florentin-1024w.webp 1024w" type="image/webp" sizes="(min-width:768px) 45vw, 100vw">
-              <img src="/img/facade-florentin-1024w.jpg"
-                   alt="Le Florentin餐厅外观，招牌清晰可见，巴黎街景氛围"
-                   width="1024" height="768" loading="eager" fetchpriority="high" style="aspect-ratio:4/3;">
+              <source srcset="/assets/img/facade/facade-enseigne-640w.webp 640w, /assets/img/facade/facade-enseigne-1024w.webp 1024w, /assets/img/facade/facade-enseigne-1920w.webp 1920w" sizes="(min-width:768px) 45vw, 100vw" type="image/webp">
+              <img src="/assets/img/facade/facade-enseigne-1024w.jpg"
+                   srcset="/assets/img/facade/facade-enseigne-640w.jpg 640w, /assets/img/facade/facade-enseigne-1024w.jpg 1024w, /assets/img/facade/facade-enseigne-1920w.jpg 1920w"
+                   sizes="(min-width:768px) 45vw, 100vw"
+                   alt="Enseigne extérieure du restaurant Le Florentin, Paris"
+                   width="1024" height="768" loading="eager" fetchpriority="high"
+                   style="aspect-ratio:4/3;">
             </picture>
           </div>
           <div class="story__content">
@@ -148,6 +151,37 @@
         <div style="text-align:center; margin-top:var(--space-md);">
           <a href="https://maps.google.com/?q=Le+Florentin+Paris" class="btn btn--secondary" target="_blank" rel="noopener">在Google地图中打开</a>
         </div>
+      </div>
+    </section>
+
+    <!-- AMBIANCE -->
+    <section class="section fade-in" aria-label="露台氛围">
+      <div class="container" style="max-width:800px; text-align:center;">
+        <picture>
+          <source srcset="/assets/img/ambiance/espresso-terrasse-640w.webp 640w, /assets/img/ambiance/espresso-terrasse-1024w.webp 1024w, /assets/img/ambiance/espresso-terrasse-1920w.webp 1920w" sizes="(max-width:768px) 100vw, 800px" type="image/webp">
+          <img src="/assets/img/ambiance/espresso-terrasse-1024w.jpg"
+               alt="Le Florentin品牌餐巾上的银托盘浓缩咖啡，户外露台"
+               width="1024" height="768" loading="lazy"
+               style="aspect-ratio:4/3; border-radius:12px; width:100%; height:auto;">
+        </picture>
+      </div>
+    </section>
+
+    <!-- NEIGHBOURHOOD -->
+    <section class="section section--alt fade-in" aria-label="周边环境">
+      <div class="container" style="max-width:800px; text-align:center;">
+        <h2>杜乐丽花园区</h2>
+        <span class="separator"></span>
+        <p style="margin:var(--space-sm) auto var(--space-md);">Le Florentin 位于巴黎最美的街区之一，坐落于协和广场与杜乐丽花园之间。</p>
+        <picture>
+          <source srcset="/assets/img/ambiance/tuileries-quartier-640w.webp 640w, /assets/img/ambiance/tuileries-quartier-1024w.webp 1024w, /assets/img/ambiance/tuileries-quartier-1920w.webp 1920w" sizes="(max-width:768px) 100vw, 800px" type="image/webp">
+          <img src="/assets/img/ambiance/tuileries-quartier-1024w.jpg"
+               srcset="/assets/img/ambiance/tuileries-quartier-640w.jpg 640w, /assets/img/ambiance/tuileries-quartier-1024w.jpg 1024w, /assets/img/ambiance/tuileries-quartier-1920w.jpg 1920w"
+               sizes="(max-width:768px) 100vw, 800px"
+               alt="杜乐丽花园中休闲的人，餐厅附近"
+               width="1024" height="768" loading="lazy"
+               style="aspect-ratio:4/3; border-radius:12px; width:100%; height:auto;">
+        </picture>
       </div>
     </section>
 

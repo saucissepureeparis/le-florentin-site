@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ═══ ACCUEIL / HOME ═══ -->
+  <url>
+    <loc>https://leflorentinbistrot.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://leflorentinbistrot.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://leflorentinbistrot.com/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://leflorentinbistrot.com/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leflorentinbistrot.com/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leflorentinbistrot.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ═══ LA CARTE / MENU ═══ -->
+  <url>
+    <loc>https://leflorentinbistrot.com/la-carte</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/la-carte"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/menu"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/menu"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/menu"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/menu"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/menu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/la-carte"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://leflorentinbistrot.com/en/menu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/la-carte"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/menu"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/menu"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/menu"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/menu"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/menu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/la-carte"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://leflorentinbistrot.com/zh/menu</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leflorentinbistrot.com/ja/menu</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://leflorentinbistrot.com/ko/menu</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://leflorentinbistrot.com/es/menu</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+
+  <!-- ═══ LE LIEU / THE PLACE ═══ -->
+  <url>
+    <loc>https://leflorentinbistrot.com/le-lieu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/le-lieu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/the-place"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/the-place"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/the-place"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/the-place"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/the-place"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/le-lieu"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://leflorentinbistrot.com/en/the-place</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://leflorentinbistrot.com/zh/the-place</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://leflorentinbistrot.com/ja/the-place</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://leflorentinbistrot.com/ko/the-place</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://leflorentinbistrot.com/es/the-place</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- ═══ INFOS PRATIQUES / VISIT US ═══ -->
+  <url>
+    <loc>https://leflorentinbistrot.com/infos-pratiques</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/infos-pratiques"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/visit-us"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/visit-us"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/visit-us"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/visit-us"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/visit-us"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/infos-pratiques"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://leflorentinbistrot.com/en/visit-us</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://leflorentinbistrot.com/zh/visit-us</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://leflorentinbistrot.com/ja/visit-us</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://leflorentinbistrot.com/ko/visit-us</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://leflorentinbistrot.com/es/visit-us</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- ═══ RÉSERVER / BOOK ═══ -->
+  <url>
+    <loc>https://leflorentinbistrot.com/reserver</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/reserver"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/book-a-table"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/reserver"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url><loc>https://leflorentinbistrot.com/en/book-a-table</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- ═══ BLOG ═══ -->
+  <url>
+    <loc>https://leflorentinbistrot.com/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/blog/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url><loc>https://leflorentinbistrot.com/en/blog/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+
+</urlset>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leflorentinbistrot.com/sitemap.xml

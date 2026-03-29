@@ -172,8 +172,12 @@ p {
   right: 0;
   z-index: 100;
   background: transparent;
-  transition: background var(--transition-slow), box-shadow var(--transition-slow);
+  transition: background var(--transition-slow), box-shadow var(--transition-slow), transform var(--transition-normal);
   padding: 0.75rem var(--space-sm);
+}
+
+.nav--hidden {
+  transform: translateY(-100%);
 }
 
 .nav--scrolled {
@@ -1292,6 +1296,25 @@ p {
     transform: none;
     animation: none;
   }
+
+  .slide-in-left,
+  .slide-in-right,
+  .scale-reveal,
+  .text-reveal {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+  }
+
+  .hero__parallax img,
+  .quote-section__bg img {
+    animation: none;
+  }
+
+  .separator {
+    width: 60px;
+    transition: none;
+  }
 }
 
 /* ─── SKIP LINK (a11y) ─── */
@@ -1353,6 +1376,11 @@ p {
   .info-grid > * { flex: 1; }
 
   .blog-grid { grid-template-columns: 1fr 1fr; }
+
+  .poi-grid { grid-template-columns: repeat(3, 1fr); }
+  .timeline { padding-left: 3rem; }
+  .timeline::before { left: 1rem; }
+  .timeline__step::before { left: -3rem; width: 2rem; height: 2rem; font-size: 0.85rem; }
 }
 
 /* ═══════════════════════════════════════
@@ -1400,6 +1428,356 @@ p {
 
 :lang(ja) {
   font-feature-settings: "palt";
+}
+
+/* ─── ENHANCED ANIMATIONS ─── */
+
+/* Slide-in from left */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 800ms ease-out, transform 800ms ease-out;
+  will-change: opacity, transform;
+}
+
+.slide-in-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide-in from right */
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 800ms ease-out, transform 800ms ease-out;
+  will-change: opacity, transform;
+}
+
+.slide-in-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale reveal for images */
+.scale-reveal {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+  will-change: opacity, transform;
+}
+
+.scale-reveal.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Text reveal with clip-path */
+.text-reveal {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.text-reveal.is-visible {
+  clip-path: inset(0 0% 0 0);
+}
+
+/* Separator grow animation */
+.separator {
+  width: 0;
+  transition: width 600ms ease-out 200ms;
+}
+
+.is-visible .separator,
+.separator.is-visible {
+  width: 60px;
+}
+
+/* Stagger delay utilities */
+.stagger-1 { transition-delay: 100ms; }
+.stagger-2 { transition-delay: 200ms; }
+.stagger-3 { transition-delay: 300ms; }
+.stagger-4 { transition-delay: 400ms; }
+.stagger-5 { transition-delay: 500ms; }
+.stagger-6 { transition-delay: 600ms; }
+
+/* Counter number animation */
+.counter {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ─── IMAGE HOVER EFFECTS ─── */
+
+/* Subtle tilt on dish cards */
+.dish-card {
+  perspective: 600px;
+}
+
+.dish-card:hover {
+  transform: scale(1.03) rotateY(-2deg);
+}
+
+/* Image shine effect on hover */
+.dish-card__image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.15),
+    transparent
+  );
+  transition: left 600ms ease;
+  pointer-events: none;
+}
+
+.dish-card__image {
+  position: relative;
+}
+
+.dish-card:hover .dish-card__image::after {
+  left: 150%;
+}
+
+/* Gallery item enhanced hover */
+.gallery__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(92, 14, 14, 0);
+  transition: background 300ms ease;
+  pointer-events: none;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__item:hover::after {
+  background: rgba(92, 14, 14, 0.15);
+}
+
+/* ─── SCROLL PROGRESS BAR ─── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--rouge-florentin), var(--or-bistrot));
+  z-index: 200;
+  width: 0%;
+  transition: none;
+}
+
+/* ─── POI CARDS (Le Quartier page) ─── */
+.poi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.poi-card {
+  background: var(--blanc);
+  border-radius: 12px;
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  border: 1px solid transparent;
+}
+
+.poi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--or-bistrot);
+}
+
+.poi-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.poi-card__name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--rouge-profond);
+  margin-bottom: 0.25rem;
+}
+
+.poi-card__distance {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--or-bistrot);
+  margin-bottom: 0.5rem;
+}
+
+.poi-card__desc {
+  font-size: 0.85rem;
+  color: var(--gris-texte);
+  margin-bottom: 0;
+}
+
+/* ─── TIMELINE (Walking itinerary) ─── */
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+  counter-reset: timeline-step;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--or-bistrot), var(--rouge-florentin));
+}
+
+.timeline__step {
+  position: relative;
+  padding-bottom: var(--space-lg);
+  counter-increment: timeline-step;
+}
+
+.timeline__step::before {
+  content: counter(timeline-step);
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--rouge-florentin);
+  color: var(--creme);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.timeline__step:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__step p {
+  font-size: 1rem;
+  color: var(--bois);
+  margin-bottom: 0;
+  padding-top: 0.1rem;
+}
+
+/* ─── NAV ENHANCED ─── */
+/* Subtle nav logo animation on load */
+.nav__logo {
+  opacity: 0;
+  animation: fadeInUp 600ms ease-out 100ms forwards;
+}
+
+/* ─── BUTTON MAGNETIC HOVER ─── */
+.btn--primary:hover {
+  box-shadow: 0 4px 15px rgba(139, 26, 26, 0.4);
+}
+
+.btn--primary:active {
+  transform: scale(0.98);
+}
+
+/* ─── HERO ENHANCED ─── */
+/* Subtle zoom on hero image */
+.hero__parallax img {
+  animation: heroZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+/* ─── QUOTE SECTION ENHANCED ─── */
+.quote-section__bg img {
+  animation: subtleZoom 15s ease-in-out infinite alternate;
+}
+
+@keyframes subtleZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+.quote-section__text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 800ms ease-out 300ms, transform 800ms ease-out 300ms;
+}
+
+.quote-section.is-visible .quote-section__text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── LIGHTBOX ─── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(26, 26, 26, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease, visibility 300ms ease;
+  cursor: pointer;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+  transform: scale(0.9);
+  transition: transform 300ms ease;
+}
+
+.lightbox.is-open img {
+  transform: scale(1);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: 2px solid rgba(250,246,239,0.5);
+  border-radius: 50%;
+  color: var(--creme);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.lightbox__close:hover {
+  border-color: var(--or-bistrot);
+  transform: scale(1.1);
 }
 
 /* ─── PRINT ─── */

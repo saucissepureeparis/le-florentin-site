@@ -170,6 +170,27 @@
   <url><loc>https://leflorentinbistrot.com/es/visit-us</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://leflorentinbistrot.com/pt/visit-us</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 
+  <!-- ═══ LE QUARTIER / THE NEIGHBORHOOD ═══ -->
+  <url>
+    <loc>https://leflorentinbistrot.com/le-quartier</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leflorentinbistrot.com/le-quartier"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leflorentinbistrot.com/en/the-neighborhood"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://leflorentinbistrot.com/zh/the-neighborhood"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://leflorentinbistrot.com/ja/the-neighborhood"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://leflorentinbistrot.com/ko/the-neighborhood"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://leflorentinbistrot.com/es/the-neighborhood"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://leflorentinbistrot.com/pt/the-neighborhood"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leflorentinbistrot.com/le-quartier"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://leflorentinbistrot.com/en/the-neighborhood</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://leflorentinbistrot.com/zh/the-neighborhood</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://leflorentinbistrot.com/ja/the-neighborhood</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://leflorentinbistrot.com/ko/the-neighborhood</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://leflorentinbistrot.com/es/the-neighborhood</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://leflorentinbistrot.com/pt/the-neighborhood</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
   <!-- ═══ RÉSERVER / BOOK ═══ -->
   <url>
     <loc>https://leflorentinbistrot.com/reserver</loc>

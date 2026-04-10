@@ -1,16 +1,62 @@
 [build]
   publish = "."
 
-# ─── REDIRECTS (anciennes URL Webflow → nouvelles) ───
+# ─── REDIRECTS ───
+# La carte est désormais hébergée sur menuonline.fr (externe).
+# Toutes les anciennes URL carte/menu redirigent vers ce site externe.
+[[redirects]]
+  from = "/la-carte"
+  to = "https://menuonline.fr/leflorentin/carte-restaurant"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/notre-carte"
-  to = "/la-carte"
+  to = "https://menuonline.fr/leflorentin/carte-restaurant"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/carte-des-vins"
-  to = "/la-carte"
+  to = "https://menuonline.fr/leflorentin/carte-restaurant"
   status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/menu"
+  to = "https://menuonline.fr/leflorentin/carte-restaurant"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/menu"
+  to = "https://menuonline.fr/leflorentin/carte-restaurant"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pt/menu"
+  to = "https://menuonline.fr/leflorentin/carte-restaurant"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/zh/menu"
+  to = "https://menuonline.fr/leflorentin/carte-restaurant"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ja/menu"
+  to = "https://menuonline.fr/leflorentin/carte-restaurant"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ko/menu"
+  to = "https://menuonline.fr/leflorentin/carte-restaurant"
+  status = 301
+  force = true
 
 # ─── HEADERS ───
 [[headers]]

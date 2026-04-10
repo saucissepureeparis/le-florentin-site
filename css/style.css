@@ -401,13 +401,31 @@ p {
   position: absolute;
   inset: 0;
   z-index: 0;
+  background: var(--noir-doux); /* fond sombre derrière l'image, plus de bande grise */
+  overflow: hidden;
 }
 
-.hero__image img,
+/* Le wrapper parallax remplit toute la zone hero */
+.hero__parallax {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* La balise <picture> est inline par défaut : on la force en bloc plein cadre */
 .hero__image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__image img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
 .hero__overlay {

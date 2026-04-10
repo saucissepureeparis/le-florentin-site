@@ -1,8 +1,24 @@
 /* ═══════════════════════════════════════════════════
    LE FLORENTIN — Design System CSS
    Bistrot français classique, Paris 1er
-   Mobile-first — Playfair Display + Inter
+   Mobile-first — Playfair Display + Creato Display
    ═══════════════════════════════════════════════════ */
+
+/* ─── @FONT-FACE — Creato Display (DA Le Florentin) ─── */
+@font-face {
+  font-family: 'Creato Display';
+  src: url('/assets/da/CreatoDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Creato Display';
+  src: url('/assets/da/CreatoDisplay-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* ─── CSS CUSTOM PROPERTIES ─── */
 :root {
@@ -23,7 +39,7 @@
 
   /* Typographies — fallback CJK pour zh/ja/ko */
   --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  --font-body: 'Creato Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
                'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR',
                'PingFang SC', 'Hiragino Sans', 'Malgun Gothic',
                sans-serif;
@@ -187,6 +203,13 @@ p {
   box-shadow: var(--shadow-md);
 }
 
+/* Pages sans hero plein écran : nav avec fond rouge dès le haut
+   (sinon le logo blanc serait invisible sur fond crème) */
+body:not(:has(.hero)) .nav {
+  background: rgba(92, 14, 14, 0.95);
+  box-shadow: var(--shadow-md);
+}
+
 .nav__inner {
   display: flex;
   align-items: center;
@@ -196,16 +219,21 @@ p {
 }
 
 .nav__logo {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--or-clair);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: 0.02em;
+  line-height: 0;
 }
 
-.nav__logo:hover {
-  color: var(--or-bistrot);
+.nav__logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+  transition: opacity var(--transition-fast);
+}
+
+.nav__logo:hover img {
+  opacity: 0.85;
 }
 
 .nav__links {
@@ -868,10 +896,14 @@ p {
 }
 
 .footer__brand .footer__logo {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  color: var(--or-clair);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-sm);
+  line-height: 0;
+}
+
+.footer__brand .footer__logo img {
+  height: 56px;
+  width: auto;
+  display: block;
 }
 
 .footer__brand p {

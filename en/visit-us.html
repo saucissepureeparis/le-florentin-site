@@ -189,14 +189,9 @@
         <span class="separator"></span>
         <p style="margin:var(--space-sm) auto var(--space-lg);">Book online via Zenchef, or call us directly.</p>
 
-        <!-- Zenchef Widget Embed -->
-        <div class="booking-embed">
-          <div style="background:var(--blanc); border-radius:12px; padding:var(--space-xl); box-shadow:var(--shadow-sm); text-align:center;">
-            <p style="color:var(--gris-texte); font-style:italic;">Zenchef booking widget</p>
-            <p class="text-small">The Zenchef widget will be embedded here.</p>
-            <!-- <iframe src="https://bookings.zenchef.com/le-florentin" ... ></iframe> -->
-          </div>
-        </div>
+        <!-- Zenchef Widget SDK (bouton flottant, pas d'auto-open) -->
+        <script>;(function (d, s, id) {const el = d.getElementsByTagName(s)[0]; if (d.getElementById(id) || el.parentNode == null) {return;} var js = d.createElement(s);  js.id = id; js.async = true; js.src = 'https://sdk.zenchef.com/v1/sdk.min.js';  el.parentNode.insertBefore(js, el); })(document, 'script', 'zenchef-sdk')</script>
+        <div class="zc-widget-config" data-restaurant="376209"></div>
 
         <p class="text-small">You can also call us: <a href="tel:+33142601342">01 42 60 13 42</a></p>
         <p class="text-small">For parties of 8+, please call us directly.</p>

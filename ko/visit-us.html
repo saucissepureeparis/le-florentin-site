@@ -189,14 +189,9 @@
         <span class="separator"></span>
         <p style="margin:var(--space-sm) auto var(--space-lg);">파트너 Zenchef를 통해 온라인으로 예약하시거나, 직접 전화해 주세요.</p>
 
-        <!-- Zenchef Widget Embed -->
-        <div class="booking-embed">
-          <div style="background:var(--blanc); border-radius:12px; padding:var(--space-xl); box-shadow:var(--shadow-sm); text-align:center;">
-            <p style="color:var(--gris-texte); font-style:italic;">Zenchef 예약 위젯</p>
-            <p class="text-small">Zenchef 위젯이 여기에 표시됩니다.</p>
-            <!-- <iframe src="https://bookings.zenchef.com/le-florentin" ... ></iframe> -->
-          </div>
-        </div>
+        <!-- Zenchef Widget SDK (bouton flottant, pas d'auto-open) -->
+        <script>;(function (d, s, id) {const el = d.getElementsByTagName(s)[0]; if (d.getElementById(id) || el.parentNode == null) {return;} var js = d.createElement(s);  js.id = id; js.async = true; js.src = 'https://sdk.zenchef.com/v1/sdk.min.js';  el.parentNode.insertBefore(js, el); })(document, 'script', 'zenchef-sdk')</script>
+        <div class="zc-widget-config" data-restaurant="376209"></div>
 
         <p class="text-small">전화로도 예약 가능합니다: <a href="tel:+33142601342">01 42 60 13 42</a></p>
         <p class="text-small">8인 이상 단체는 전화로 문의해 주세요.</p>

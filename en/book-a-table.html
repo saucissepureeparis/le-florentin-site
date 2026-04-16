@@ -66,18 +66,9 @@
         <h3>At Le Florentin — French bistro, Paris 1st</h3>
         <span class="separator"></span>
 
-        <!-- Zenchef Widget Embed -->
-        <div class="booking-embed" style="margin:var(--space-lg) auto;">
-          <div style="background:var(--blanc); border-radius:12px; padding:var(--space-xl); box-shadow:var(--shadow-md); min-height:500px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:var(--space-sm);">
-            <p style="color:var(--gris-texte); font-style:italic; font-family:var(--font-display); font-size:1.1rem;">Zenchef booking widget</p>
-            <p class="text-small">The Zenchef widget will be embedded here.<br>Select the date, time and number of guests.</p>
-            <!--
-              Embed Zenchef widget here:
-              <script src="https://bookings.zenchef.com/scripts/widget.js" data-restaurant="le-florentin"></script>
-              Google Ads tracking: conversion value = 30€
-            -->
-          </div>
-        </div>
+        <!-- Zenchef Widget SDK -->
+        <script>;(function (d, s, id) {const el = d.getElementsByTagName(s)[0]; if (d.getElementById(id) || el.parentNode == null) {return;} var js = d.createElement(s);  js.id = id; js.async = true; js.src = 'https://sdk.zenchef.com/v1/sdk.min.js';  el.parentNode.insertBefore(js, el); })(document, 'script', 'zenchef-sdk')</script>
+        <div class="zc-widget-config" data-restaurant="376209" data-open="0"></div>
 
         <div style="margin-top:var(--space-lg);">
           <p>Prefer to call?</p>

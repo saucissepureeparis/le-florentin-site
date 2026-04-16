@@ -1840,6 +1840,65 @@ body:not(:has(.hero)) .nav {
   transform: scale(1.1);
 }
 
+/* ─── FAQ (SEO + GEO) ─── */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.faq__item {
+  background: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  border-radius: 8px;
+  padding: var(--space-sm) var(--space-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.faq__item[open] {
+  border-color: var(--or-bistrot);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq__item summary {
+  cursor: pointer;
+  padding: var(--space-xs) 0;
+  font-size: 1rem;
+  color: var(--bois);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.faq__item summary::-webkit-details-marker { display: none; }
+
+.faq__item summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--or-bistrot);
+  transition: transform var(--transition-fast);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.faq__item[open] summary::after {
+  content: "−";
+}
+
+.faq__item p {
+  padding: var(--space-sm) 0 0;
+  color: var(--gris-texte);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.faq__item p a {
+  font-weight: 500;
+}
+
 /* ─── PRINT ─── */
 @media print {
   .nav, .sticky-cta, .footer { display: none; }

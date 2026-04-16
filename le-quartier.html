@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#5C0E0E">
+  <meta name="author" content="Le Florentin">
+  <meta name="geo.region" content="FR-75">
+  <meta name="geo.placename" content="Paris 1er">
+  <meta name="geo.position" content="48.8656;2.3212">
+  <meta name="ICBM" content="48.8656, 2.3212">
   <title>Le Quartier — Place de la Concorde, Tuileries, Paris 1er | Le Florentin</title>
   <meta name="description" content="Découvrez le quartier mythique autour du Florentin : Place de la Concorde, Jardin des Tuileries, Rue de Rivoli. Guide du 1er arrondissement pour les visiteurs.">
 
@@ -22,13 +29,22 @@
   <meta property="og:description" content="Découvrez le quartier mythique autour du Florentin : Place de la Concorde, Jardin des Tuileries, Rue de Rivoli.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://leflorentinbistrot.com/le-quartier">
-  <meta property="og:image" content="https://leflorentinbistrot.com/img/og-quartier-fr.jpg">
+  <meta property="og:image" content="https://leflorentinbistrot.com/assets/img/facade/facade-enseigne-1920w.jpg">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:alt" content="Le Florentin, bistrot français Paris 1er">
+  <meta property="og:site_name" content="Le Florentin">
   <meta property="og:locale" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Le Quartier — 1er arrondissement">
+  <meta name="twitter:description" content="Place de la Concorde, Tuileries, Rue Saint-Honoré : découvrez le quartier du Florentin.">
+  <meta name="twitter:image" content="https://leflorentinbistrot.com/assets/img/facade/facade-nuit-1920w.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://sdk.zenchef.com" crossorigin>
+  <link rel="preconnect" href="https://bookings.zenchef.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
@@ -52,6 +68,31 @@
       "latitude": 48.8656,
       "longitude": 2.3212
     }
+  }
+  </script>
+
+  <!-- Schema.org : WebPage + Breadcrumb + référence Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://leflorentinbistrot.com/le-quartier",
+        "url": "https://leflorentinbistrot.com/le-quartier",
+        "name": "Le Quartier — 1er arrondissement",
+        "isPartOf": {"@id": "https://leflorentinbistrot.com/#website"},
+        "about": {"@id": "https://leflorentinbistrot.com/#restaurant"},
+        "inLanguage": "fr-FR"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Accueil","item":"https://leflorentinbistrot.com/"},
+          {"@type":"ListItem","position":2,"name":"Le Quartier — 1er arrondissement","item":"https://leflorentinbistrot.com/le-quartier"}
+        ]
+      }
+    ]
   }
   </script>
 </head>

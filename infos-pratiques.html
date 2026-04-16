@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#5C0E0E">
+  <meta name="author" content="Le Florentin">
+  <meta name="geo.region" content="FR-75">
+  <meta name="geo.placename" content="Paris 1er">
+  <meta name="geo.position" content="48.8656;2.3212">
+  <meta name="ICBM" content="48.8656, 2.3212">
   <title>Horaires, accès et réservation — Le Florentin Paris</title>
   <meta name="description" content="Ouvert 7j/7, métro Concorde (lignes 1, 8, 12). Réservez votre table au Florentin par téléphone ou en ligne via Zenchef. Groupes bienvenus.">
 
@@ -20,9 +27,16 @@
   <meta property="og:description" content="Ouvert 7j/7, métro Concorde (lignes 1, 8, 12). Réservez votre table au Florentin.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://leflorentinbistrot.com/infos-pratiques">
-  <meta property="og:image" content="https://leflorentinbistrot.com/img/og-pratique-fr.jpg">
+  <meta property="og:image" content="https://leflorentinbistrot.com/assets/img/facade/facade-enseigne-1920w.jpg">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:alt" content="Le Florentin, bistrot français Paris 1er">
+  <meta property="og:site_name" content="Le Florentin">
   <meta property="og:locale" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nous trouver — Horaires & Accès">
+  <meta name="twitter:description" content="Adresse, horaires, métro, accès : toutes les infos pratiques pour venir au Florentin.">
+  <meta name="twitter:image" content="https://leflorentinbistrot.com/assets/img/facade/facade-nuit-1920w.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,9 +46,9 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Restaurant",
     "name": "Le Florentin",
-    "image": "https://leflorentinbistrot.com/img/facade-florentin.jpg",
+    "image": "https://leflorentinbistrot.com/assets/img/facade/facade-nuit-1920w.jpg",
     "telephone": "+33142601342",
     "address": {
       "@type": "PostalAddress",
@@ -58,6 +72,31 @@
     ],
     "priceRange": "€€",
     "acceptsReservations": "True"
+  }
+  </script>
+
+  <!-- Schema.org : WebPage + Breadcrumb + référence Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://leflorentinbistrot.com/infos-pratiques",
+        "url": "https://leflorentinbistrot.com/infos-pratiques",
+        "name": "Nous trouver — Horaires & Accès",
+        "isPartOf": {"@id": "https://leflorentinbistrot.com/#website"},
+        "about": {"@id": "https://leflorentinbistrot.com/#restaurant"},
+        "inLanguage": "fr-FR"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Accueil","item":"https://leflorentinbistrot.com/"},
+          {"@type":"ListItem","position":2,"name":"Nous trouver — Horaires & Accès","item":"https://leflorentinbistrot.com/infos-pratiques"}
+        ]
+      }
+    ]
   }
   </script>
 </head>

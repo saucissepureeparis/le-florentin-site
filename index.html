@@ -22,7 +22,7 @@
   <meta property="og:description" content="Bistrot d'époque au cœur du 1er arrondissement. Cuisine française classique, décor Belle Époque.">
   <meta property="og:type" content="restaurant">
   <meta property="og:url" content="https://leflorentinbistrot.com/">
-  <meta property="og:image" content="https://leflorentinbistrot.com/img/og-home-fr.jpg">
+  <meta property="og:image" content="https://leflorentinbistrot.com/assets/img/facade/facade-nuit-1920w.jpg">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="zh_CN">
@@ -32,60 +32,234 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Le Florentin — Bistrot français, Place de la Concorde">
   <meta name="twitter:description" content="Bistrot d'époque au cœur du 1er arrondissement. Cuisine française classique, décor Belle Époque.">
-  <meta name="twitter:image" content="https://leflorentinbistrot.com/img/og-home-fr.jpg">
+  <meta name="twitter:image" content="https://leflorentinbistrot.com/assets/img/facade/facade-nuit-1920w.jpg">
 
-  <!-- Fonts -->
+  <!-- Robots & browser hints -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#5C0E0E">
+  <meta name="author" content="Le Florentin">
+  <meta name="geo.region" content="FR-75">
+  <meta name="geo.placename" content="Paris 1er">
+  <meta name="geo.position" content="48.8656;2.3212">
+  <meta name="ICBM" content="48.8656, 2.3212">
+
+  <!-- Performance : preconnect/preload -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://sdk.zenchef.com" crossorigin>
+  <link rel="preconnect" href="https://bookings.zenchef.com" crossorigin>
+  <link rel="preload" as="image" href="/assets/img/facade/facade-nuit-landscape-1920w.webp" media="(min-width: 768px)" imagesrcset="/assets/img/facade/facade-nuit-landscape-1280w.webp 1280w, /assets/img/facade/facade-nuit-landscape-1920w.webp 1920w, /assets/img/facade/facade-nuit-landscape-2560w.webp 2560w" imagesizes="100vw" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/img/facade/facade-nuit-1024w.webp" media="(max-width: 767px)" imagesrcset="/assets/img/facade/facade-nuit-640w.webp 640w, /assets/img/facade/facade-nuit-1024w.webp 1024w, /assets/img/facade/facade-nuit-1920w.webp 1920w" imagesizes="100vw" fetchpriority="high">
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 
-  <!-- Schema.org JSON-LD -->
+  <!-- ═══ Schema.org JSON-LD — @graph complet ═══ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "Le Florentin",
-    "image": "https://leflorentinbistrot.com/img/le-florentin-hero.jpg",
-    "url": "https://leflorentinbistrot.com",
-    "telephone": "+33142601342",
-    "priceRange": "€€",
-    "servesCuisine": ["French", "Bistro", "Classic French"],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 Place de la Concorde",
-      "addressLocality": "Paris",
-      "postalCode": "75001",
-      "addressCountry": "FR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 48.8656,
-      "longitude": 2.3212
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "12:00",
-        "closes": "23:00"
+        "@type": "Restaurant",
+        "@id": "https://leflorentinbistrot.com/#restaurant",
+        "name": "Le Florentin",
+        "alternateName": ["Le Florentin Bistrot Parisien","Restaurant Le Florentin Paris"],
+        "description": "Bistrot français classique au cœur du 1er arrondissement de Paris, entre la Place de la Concorde et les jardins des Tuileries. Cuisine française traditionnelle servie en service continu 7j/7 dans un décor Belle Époque.",
+        "slogan": "Le charme du bistrot, le chic parisien, le goût des bons plats",
+        "image": [
+          "https://leflorentinbistrot.com/assets/img/facade/facade-nuit-1920w.jpg",
+          "https://leflorentinbistrot.com/assets/img/facade/facade-enseigne-1920w.jpg",
+          "https://leflorentinbistrot.com/assets/img/ambiance/bistrot-table-menu-1920w.jpg"
+        ],
+        "logo": "https://leflorentinbistrot.com/assets/da/Le_Florentin_Logo-1-removebg-preview.png",
+        "url": "https://leflorentinbistrot.com/",
+        "telephone": "+33142601342",
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Cash, Credit Card, Visa, Mastercard, American Express",
+        "servesCuisine": ["French","Bistro","Classic French","European","Traditional French"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2 Place de la Concorde",
+          "addressLocality": "Paris",
+          "addressRegion": "Île-de-France",
+          "postalCode": "75001",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 48.8656,
+          "longitude": 2.3212
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Le+Florentin+2+Place+de+la+Concorde+Paris",
+        "areaServed": {
+          "@type": "City",
+          "name": "Paris"
+        },
+        "publicAccess": true,
+        "smokingAllowed": false,
+        "isAccessibleForFree": true,
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "12:00",
+            "closes": "23:00"
+          }
+        ],
+        "acceptsReservations": "True",
+        "menu": "https://menuonline.fr/leflorentin/carte-restaurant",
+        "hasMenu": {
+          "@type": "Menu",
+          "name": "La Carte du Florentin",
+          "url": "https://menuonline.fr/leflorentin/carte-restaurant",
+          "inLanguage": "fr-FR",
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "name": "Entrées classiques",
+              "hasMenuItem": [
+                {"@type":"MenuItem","name":"Escargots de Bourgogne","description":"Beurre d'ail, persil frais, six pièces servies brûlantes","menuAddOn":[],"suitableForDiet":"https://schema.org/OmnivoreDiet"},
+                {"@type":"MenuItem","name":"Soupe à l'oignon gratinée","description":"Oignons caramélisés, bouillon maison, comté fondu","suitableForDiet":"https://schema.org/OmnivoreDiet"}
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Plats signatures",
+              "hasMenuItem": [
+                {"@type":"MenuItem","name":"Confit de canard","description":"Cuisse confite, pommes sarladaises, salade verte","suitableForDiet":"https://schema.org/OmnivoreDiet"},
+                {"@type":"MenuItem","name":"Tartare de bœuf","description":"Assaisonné à la main, frites maison, jaune d'œuf fermier","suitableForDiet":"https://schema.org/OmnivoreDiet"}
+              ]
+            }
+          ]
+        },
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://bookings.zenchef.com/results?rid=376209",
+            "inLanguage": "fr-FR",
+            "actionPlatform": ["https://schema.org/DesktopWebPlatform","https://schema.org/MobileWebPlatform","https://schema.org/IOSPlatform","https://schema.org/AndroidPlatform"]
+          },
+          "result": {
+            "@type": "FoodEstablishmentReservation",
+            "name": "Réservation au Florentin"
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "500",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "knowsAbout": ["bistrot parisien","cuisine française traditionnelle","escargots de Bourgogne","soupe à l'oignon","confit de canard","tartare de bœuf","Place de la Concorde","jardin des Tuileries","Paris 1er arrondissement"],
+        "sameAs": [
+          "https://www.google.com/maps/search/?api=1&query=Le+Florentin+2+Place+de+la+Concorde+Paris"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://leflorentinbistrot.com/#organization",
+        "name": "Le Florentin",
+        "url": "https://leflorentinbistrot.com/",
+        "logo": "https://leflorentinbistrot.com/assets/da/Le_Florentin_Logo-1-removebg-preview.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+33142601342",
+          "contactType": "reservations",
+          "areaServed": "FR",
+          "availableLanguage": ["French","English","Spanish","Portuguese","Chinese","Japanese","Korean"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://leflorentinbistrot.com/#website",
+        "url": "https://leflorentinbistrot.com/",
+        "name": "Le Florentin",
+        "description": "Site officiel du restaurant Le Florentin, bistrot français Paris 1er",
+        "publisher": {"@id":"https://leflorentinbistrot.com/#organization"},
+        "inLanguage": ["fr-FR","en-US","es-ES","pt-PT","zh-CN","ja-JP","ko-KR"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Accueil","item":"https://leflorentinbistrot.com/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://leflorentinbistrot.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Où se trouve le restaurant Le Florentin ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le Florentin est situé au 2 Place de la Concorde, dans le 1er arrondissement de Paris, entre la Place de la Concorde et la Rue Saint-Honoré, à deux pas du jardin des Tuileries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment se rendre au Florentin en transports en commun ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La station de métro la plus proche est Concorde, desservie par les lignes 1, 8 et 12, à 2 minutes à pied du restaurant."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels sont les horaires d'ouverture du Florentin ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le Florentin est ouvert 7 jours sur 7 en service continu, de 12h à 23h, y compris le dimanche. Vous pouvez y déjeuner, dîner ou simplement prendre un verre à toute heure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Faut-il réserver au Florentin ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La réservation est vivement conseillée, en particulier le soir et le week-end. Vous pouvez réserver en ligne via notre widget Zenchef ou par téléphone au 01 42 60 13 42."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel type de cuisine propose Le Florentin ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le Florentin propose une cuisine française traditionnelle de bistrot : escargots de Bourgogne, soupe à l'oignon gratinée, confit de canard, tartare de bœuf, onglet à l'échalote, entrecôte, tarte Tatin. Tous les plats sont préparés avec des produits frais."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le Florentin accueille-t-il les groupes ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Pour les réservations de plus de 8 personnes, contactez-nous directement par téléphone au 01 42 60 13 42 afin d'organiser votre repas en groupe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel est le budget moyen au Florentin ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le Florentin se situe dans une gamme de prix moyenne (€€). Comptez environ 35 à 55 € par personne pour un repas complet avec entrée, plat, dessert et un verre de vin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels moyens de paiement sont acceptés ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le Florentin accepte les paiements en espèces, carte bancaire (Visa, Mastercard, American Express) et tickets restaurant."
+            }
+          }
+        ]
       }
-    ],
-    "menu": "https://menuonline.fr/leflorentin/carte-restaurant",
-    "acceptsReservations": "True",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "reviewCount": "500",
-      "bestRating": "5"
-    },
-    "hasMenu": {
-      "@type": "Menu",
-      "name": "La Carte du Florentin",
-      "url": "https://menuonline.fr/leflorentin/carte-restaurant"
-    }
+    ]
   }
   </script>
 </head>
@@ -227,7 +401,7 @@
               </picture>
             </div>
             <div class="dish-card__info">
-              <div class="dish-card__name">Escargots de Bourgogne</div>
+              <h3 class="dish-card__name">Escargots de Bourgogne</h3>
               <p class="dish-card__desc">Beurre d'ail, persil frais, six pièces servies brûlantes</p>
             </div>
           </a>
@@ -241,7 +415,7 @@
               </picture>
             </div>
             <div class="dish-card__info">
-              <div class="dish-card__name">Soupe à l'oignon gratinée</div>
+              <h3 class="dish-card__name">Soupe à l'oignon gratinée</h3>
               <p class="dish-card__desc">Oignons caramélisés, bouillon maison, comté fondu</p>
             </div>
           </a>
@@ -257,7 +431,7 @@
               </picture>
             </div>
             <div class="dish-card__info">
-              <div class="dish-card__name">Confit de canard</div>
+              <h3 class="dish-card__name">Confit de canard</h3>
               <p class="dish-card__desc">Cuisse confite, pommes sarladaises, salade verte</p>
             </div>
           </a>
@@ -273,7 +447,7 @@
               </picture>
             </div>
             <div class="dish-card__info">
-              <div class="dish-card__name">Tartare de bœuf</div>
+              <h3 class="dish-card__name">Tartare de bœuf</h3>
               <p class="dish-card__desc">Assaisonné à la main, frites maison, jaune d'œuf fermier</p>
             </div>
           </a>
@@ -357,6 +531,50 @@
               <a href="https://maps.google.com/?q=Le+Florentin+Paris" class="btn btn--secondary" target="_blank" rel="noopener">Itinéraire</a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FAQ — Questions fréquentes (SEO + GEO) ═══ -->
+    <section class="section fade-in" aria-label="Questions fréquentes">
+      <div class="container" style="max-width:820px;">
+        <div class="section__header">
+          <h2>Questions fréquentes</h2>
+          <span class="separator"></span>
+        </div>
+        <div class="faq">
+          <details class="faq__item">
+            <summary><strong>Où se trouve le restaurant Le Florentin ?</strong></summary>
+            <p>Le Florentin est situé au <strong>2 Place de la Concorde, 75001 Paris</strong>, dans le 1er arrondissement, entre la Place de la Concorde et la Rue Saint-Honoré, à deux pas du jardin des Tuileries.</p>
+          </details>
+          <details class="faq__item">
+            <summary><strong>Comment se rendre au Florentin en transports en commun ?</strong></summary>
+            <p>La station de métro la plus proche est <strong>Concorde</strong>, desservie par les <strong>lignes 1, 8 et 12</strong>, à 2 minutes à pied du restaurant. Les stations <strong>Tuileries</strong> (ligne 1) et <strong>Madeleine</strong> (lignes 8, 12, 14) sont également proches.</p>
+          </details>
+          <details class="faq__item">
+            <summary><strong>Quels sont les horaires d'ouverture du Florentin ?</strong></summary>
+            <p>Le Florentin est ouvert <strong>7 jours sur 7 en service continu, de 12h à 23h</strong>, y compris le dimanche. Vous pouvez y déjeuner, dîner ou simplement prendre un verre à toute heure de la journée.</p>
+          </details>
+          <details class="faq__item">
+            <summary><strong>Faut-il réserver au Florentin ?</strong></summary>
+            <p>La réservation est <strong>vivement conseillée</strong>, en particulier le soir et le week-end. Vous pouvez réserver en ligne via notre <a href="/reserver">page de réservation Zenchef</a> ou par téléphone au <a href="tel:+33142601342">01 42 60 13 42</a>.</p>
+          </details>
+          <details class="faq__item">
+            <summary><strong>Quel type de cuisine propose Le Florentin ?</strong></summary>
+            <p>Le Florentin propose une <strong>cuisine française traditionnelle de bistrot</strong> : escargots de Bourgogne, soupe à l'oignon gratinée, confit de canard, tartare de bœuf préparé à la minute, onglet à l'échalote, entrecôte, tarte Tatin. Tous les plats sont préparés avec des produits frais et servis dans la plus pure tradition du bistrot parisien.</p>
+          </details>
+          <details class="faq__item">
+            <summary><strong>Le Florentin accueille-t-il les groupes ?</strong></summary>
+            <p>Oui. Pour les réservations de <strong>plus de 8 personnes</strong>, contactez-nous directement par téléphone au <a href="tel:+33142601342">01 42 60 13 42</a> afin d'organiser votre repas en groupe dans les meilleures conditions.</p>
+          </details>
+          <details class="faq__item">
+            <summary><strong>Quel est le budget moyen au Florentin ?</strong></summary>
+            <p>Le Florentin se situe dans une gamme de prix <strong>moyenne (€€)</strong>. Comptez environ <strong>35 à 55 €</strong> par personne pour un repas complet avec entrée, plat, dessert et un verre de vin.</p>
+          </details>
+          <details class="faq__item">
+            <summary><strong>Quels moyens de paiement sont acceptés ?</strong></summary>
+            <p>Le Florentin accepte les paiements en <strong>espèces, carte bancaire (Visa, Mastercard, American Express)</strong> et tickets restaurant.</p>
+          </details>
         </div>
       </div>
     </section>

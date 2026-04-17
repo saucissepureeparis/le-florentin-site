@@ -118,7 +118,7 @@
 
       /* Wordmark "Le Florentin" en script */
       '.fl-splash__brand{',
-        'font-family:"Playfair Display",Georgia,serif;',
+        'font-family:"Creato Display",Georgia,serif;font-style:italic;font-weight:700;',
         'font-style:italic;font-weight:700;',
         'font-size:clamp(2.4rem,8vw,4.2rem);',
         'color:#FAF6EF;line-height:1;',
@@ -158,7 +158,7 @@
 
       /* Bouton langue : nom dans son écriture native */
       '.fl-splash__lang{',
-        'font-family:"Playfair Display",Georgia,serif;',
+        'font-family:"Creato Display",Georgia,serif;font-style:italic;font-weight:700;',
         'font-style:italic;font-weight:400;',
         'font-size:1.18rem;color:#FAF6EF;',
         'background:transparent;border:0;cursor:pointer;',
@@ -189,7 +189,7 @@
         'position:absolute;inset:0;',
         'display:flex;align-items:center;justify-content:center;',
         'padding:2rem;text-align:center;',
-        'font-family:"Playfair Display",Georgia,serif;',
+        'font-family:"Creato Display",Georgia,serif;font-style:italic;font-weight:700;',
         'font-style:italic;font-weight:400;',
         'font-size:clamp(1.6rem,5.2vw,2.6rem);',
         'line-height:1.45;color:#FAF6EF;',

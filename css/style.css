@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════
    LE FLORENTIN — Design System CSS
    Bistrot français classique, Paris 1er
-   Mobile-first — Playfair Display + Creato Display
+   Mobile-first — Creato Display (DA Le Florentin)
    ═══════════════════════════════════════════════════ */
 
 /* ─── @FONT-FACE — Creato Display (DA Le Florentin) ─── */
@@ -37,8 +37,11 @@
   --gris-clair: #E8E4DE;
   --blanc: #FFFFFF;
 
-  /* Typographies — fallback CJK pour zh/ja/ko */
-  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  /* Typographies — DA Le Florentin
+     Titres : Creato Display Regular Italic affichée en bold (synthetic)
+     Body   : Creato Display Regular
+     Fallback CJK pour zh/ja/ko */
+  --font-display: 'Creato Display', Georgia, 'Times New Roman', serif;
   --font-body: 'Creato Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
                'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR',
                'PingFang SC', 'Hiragino Sans', 'Malgun Gothic',
@@ -129,27 +132,26 @@ ul, ol {
   list-style: none;
 }
 
-/* ─── TYPOGRAPHY — Mobile-first ─── */
+/* ─── TYPOGRAPHY — Mobile-first
+   DA Le Florentin : tous les titres en Creato Display italic bold ─── */
 h1, h2, h3 {
   font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
   line-height: 1.2;
 }
 
 h1 {
   font-size: 2rem;
-  font-weight: 700;
 }
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 600;
   color: var(--rouge-profond);
 }
 
 h3 {
   font-size: 1.15rem;
-  font-weight: 400;
-  font-style: italic;
   color: var(--or-bistrot);
 }
 
@@ -481,6 +483,7 @@ body:not(:has(.hero)) .nav {
 
 .hero__title {
   font-family: var(--font-display);
+  font-style: italic;
   font-size: 2rem;
   font-weight: 700;
   color: var(--creme);
@@ -730,8 +733,9 @@ body:not(:has(.hero)) .nav {
 
 .dish-card__name {
   font-family: var(--font-display);
+  font-style: italic;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--rouge-profond);
   margin-bottom: 0.25rem;
 }
@@ -1024,8 +1028,9 @@ body:not(:has(.hero)) .nav {
   padding: var(--space-sm) var(--space-md);
   cursor: pointer;
   font-family: var(--font-display);
+  font-style: italic;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--rouge-profond);
   background: var(--blanc);
   border: none;
@@ -1071,8 +1076,9 @@ body:not(:has(.hero)) .nav {
 
 .menu-item__name {
   font-family: var(--font-display);
+  font-style: italic;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--bois);
   flex: 1;
   /* Filet pointillé style bistrot classique */
@@ -1258,8 +1264,9 @@ body:not(:has(.hero)) .nav {
 
 .blog-card__title {
   font-family: var(--font-display);
+  font-style: italic;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--rouge-profond);
   margin-bottom: 0.5rem;
 }
@@ -1664,8 +1671,9 @@ body:not(:has(.hero)) .nav {
 
 .poi-card__name {
   font-family: var(--font-display);
+  font-style: italic;
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--rouge-profond);
   margin-bottom: 0.25rem;
 }

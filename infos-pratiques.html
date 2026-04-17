@@ -145,98 +145,114 @@
   </div>
 
   <main id="main">
-    <!-- HERO SPLIT -->
-    <section class="section" style="padding-top:6rem;" aria-label="Informations pratiques">
+    <!-- ═══ HERO CENTRÉ ═══ -->
+    <section class="visit-hero" aria-label="Informations pratiques">
+      <div class="visit-hero__bg">
+        <picture>
+          <source srcset="/assets/img/facade/facade-enseigne-640w.webp 640w, /assets/img/facade/facade-enseigne-1024w.webp 1024w, /assets/img/facade/facade-enseigne-1920w.webp 1920w" sizes="100vw" type="image/webp">
+          <img src="/assets/img/facade/facade-enseigne-1920w.jpg"
+               srcset="/assets/img/facade/facade-enseigne-640w.jpg 640w, /assets/img/facade/facade-enseigne-1024w.jpg 1024w, /assets/img/facade/facade-enseigne-1920w.jpg 1920w"
+               sizes="100vw"
+               alt="Enseigne extérieure du restaurant Le Florentin"
+               loading="eager" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="visit-hero__overlay"></div>
+      <div class="visit-hero__content">
+        <span class="visit-hero__eyebrow">Nous rendre visite</span>
+        <h1>Nous trouver</h1>
+        <span class="separator separator--light"></span>
+        <p class="visit-hero__lead">Au 10 Rue Saint-Florentin, à deux pas de la Place de la Concorde<br>Ouvert 7 jours sur 7, de 7h à 23h en service continu.</p>
+      </div>
+    </section>
+
+    <!-- ═══ INFO CARDS (grille 4 colonnes) ═══ -->
+    <section class="section" aria-label="Coordonnées et accès">
       <div class="container">
-        <div class="story">
-          <div class="story__image">
-            <picture>
-              <source srcset="/assets/img/facade/facade-enseigne-640w.webp 640w, /assets/img/facade/facade-enseigne-1024w.webp 1024w, /assets/img/facade/facade-enseigne-1920w.webp 1920w" sizes="(min-width:768px) 45vw, 100vw" type="image/webp">
-              <img src="/assets/img/facade/facade-enseigne-1024w.jpg"
-                   srcset="/assets/img/facade/facade-enseigne-640w.jpg 640w, /assets/img/facade/facade-enseigne-1024w.jpg 1024w, /assets/img/facade/facade-enseigne-1920w.jpg 1920w"
-                   sizes="(min-width:768px) 45vw, 100vw"
-                   alt="Enseigne extérieure du restaurant Le Florentin, Paris"
-                   width="1024" height="1536" loading="eager" fetchpriority="high">
-            </picture>
-          </div>
-          <div class="story__content">
-            <h1>Nous trouver</h1>
-            <span class="separator" style="margin:var(--space-sm) 0;"></span>
-            <div class="info-card" style="background:transparent; box-shadow:none; padding:0;">
-              <p><strong>Adresse :</strong> 10 Rue Saint-Florentin, 75001 Paris</p>
-              <p><strong>Téléphone :</strong> <a href="tel:+33142601342" style="font-size:1.1rem; font-weight:600;">01 42 60 13 42</a></p>
-              <p><strong>Horaires :</strong> Ouvert tous les jours — Service continu</p>
-              <p><strong>Métro :</strong> Concorde (lignes 1, 8, 12) — 2 min à pied</p>
-              <p class="text-small">Au 10 Rue Saint-Florentin, à deux pas de la Place de la Concorde</p>
+        <div class="info-cards">
+
+          <article class="info-card">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-7.5-7-13a7 7 0 0 1 14 0c0 5.5-7 13-7 13z"/><circle cx="12" cy="8" r="2.5"/></svg>
             </div>
-            <div style="margin-top:var(--space-md); display:flex; flex-wrap:wrap; gap:var(--space-sm);">
-              <a href="tel:+33142601342" class="btn btn--secondary">Appeler</a>
-              <a href="https://www.google.com/maps/place/Le+Florentin/@48.8676221,2.3245621,17z/data=!4m6!3m5!1s0x47e66e3295d4870f:0x2af3dbbbbfc82ff0" class="btn btn--secondary" target="_blank" rel="noopener">Itinéraire</a>
+            <h3 class="info-card__label">Adresse</h3>
+            <p class="info-card__value">10 Rue Saint-Florentin<br><span>75001 Paris</span></p>
+            <a class="info-card__action" href="https://www.google.com/maps/place/Le+Florentin/@48.8676221,2.3245621,17z/data=!4m6!3m5!1s0x47e66e3295d4870f:0x2af3dbbbbfc82ff0" target="_blank" rel="noopener">Itinéraire →</a>
+          </article>
+
+          <article class="info-card">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
             </div>
-          </div>
+            <h3 class="info-card__label">Téléphone</h3>
+            <p class="info-card__value"><a href="tel:+33142601342">01 42 60 13 42</a></p>
+            <a class="info-card__action" href="tel:+33142601342">Appeler →</a>
+          </article>
+
+          <article class="info-card">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="info-card__label">Horaires</h3>
+            <p class="info-card__value">7h&nbsp;–&nbsp;23h<br><span>7 jours sur 7, service continu</span></p>
+            <a class="info-card__action" href="/reserver">Réserver →</a>
+          </article>
+
+          <article class="info-card">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="8"/><path d="M4 12h16M12 4v16"/></svg>
+            </div>
+            <h3 class="info-card__label">Métro</h3>
+            <p class="info-card__value">Concorde<br><span>Lignes 1 · 8 · 12 — 2 min à pied</span></p>
+            <a class="info-card__action" href="/le-quartier">Le quartier →</a>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- GOOGLE MAPS -->
+    <!-- ═══ GOOGLE MAPS — pleine largeur ═══ -->
     <section class="section section--alt" aria-label="Plan d'accès">
       <div class="container">
-        <div class="location__map">
+        <div class="section__header" style="text-align:center; margin-bottom:var(--space-lg);">
+          <h2>Plan d'accès</h2>
+          <span class="separator"></span>
+        </div>
+        <div class="visit-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.3!2d2.3223734!3d48.8676221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3295d4870f%3A0x2af3dbbbbfc82ff0!2sLe+Florentin!5e0!3m2!1sfr!2sfr!4v1712000000000"
-                  title="Carte Google Maps — Le Florentin, Paris 1er"
+                  title="Carte Google Maps — Le Florentin, 10 Rue Saint-Florentin, Paris 1er"
                   loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                   allowfullscreen></iframe>
         </div>
-        <div style="text-align:center; margin-top:var(--space-md);">
+        <div class="visit-map__actions">
           <a href="https://www.google.com/maps/place/Le+Florentin/@48.8676221,2.3245621,17z/data=!4m6!3m5!1s0x47e66e3295d4870f:0x2af3dbbbbfc82ff0" class="btn btn--secondary" target="_blank" rel="noopener">Ouvrir dans Google Maps</a>
+          <a href="/reserver" class="btn btn--primary">Réserver une table</a>
         </div>
       </div>
     </section>
 
-    <!-- AMBIANCE -->
-    <section class="section fade-in" aria-label="Ambiance terrasse">
-      <div class="container" style="max-width:800px; text-align:center;">
-        <picture>
-          <source srcset="/assets/img/ambiance/espresso-terrasse-640w.webp 640w, /assets/img/ambiance/espresso-terrasse-1024w.webp 1024w, /assets/img/ambiance/espresso-terrasse-1920w.webp 1920w" sizes="(max-width:768px) 100vw, 800px" type="image/webp">
-          <img src="/assets/img/ambiance/espresso-terrasse-1024w.jpg"
-               alt="Espresso sur plateau argenté avec serviette Le Florentin, terrasse extérieure"
-               width="1024" height="1536" loading="lazy"
-               style="border-radius:12px; width:100%; height:auto; max-width:560px;">
-        </picture>
-      </div>
-    </section>
-
-    <!-- QUARTIER -->
-    <section class="section section--alt fade-in" aria-label="Le quartier">
-      <div class="container" style="max-width:800px; text-align:center;">
-        <h2>Le quartier des Tuileries</h2>
-        <span class="separator"></span>
-        <p style="margin:var(--space-sm) auto var(--space-md);">Le Florentin est situé au cœur de l'un des plus beaux quartiers de Paris, à deux pas de la Place de la Concorde et du Jardin des Tuileries.</p>
-        <picture>
-          <source srcset="/assets/img/ambiance/tuileries-quartier-640w.webp 640w, /assets/img/ambiance/tuileries-quartier-1024w.webp 1024w, /assets/img/ambiance/tuileries-quartier-1920w.webp 1920w" sizes="(max-width:768px) 100vw, 800px" type="image/webp">
-          <img src="/assets/img/ambiance/tuileries-quartier-1024w.jpg"
-               srcset="/assets/img/ambiance/tuileries-quartier-640w.jpg 640w, /assets/img/ambiance/tuileries-quartier-1024w.jpg 1024w, /assets/img/ambiance/tuileries-quartier-1920w.jpg 1920w"
-               sizes="(max-width:768px) 100vw, 600px"
-               alt="Homme se relaxant au Jardin des Tuileries, quartier du restaurant"
-               width="1024" height="1536" loading="lazy"
-               style="border-radius:12px; width:100%; height:auto; max-width:560px;">
-        </picture>
-      </div>
-    </section>
-
-    <!-- RÉSERVATION -->
-    <section class="section fade-in" aria-label="Réservation">
-      <div class="container" style="max-width:700px; text-align:center;">
-        <h2>Réserver votre table</h2>
-        <span class="separator"></span>
-        <p style="margin:var(--space-sm) auto var(--space-lg);">Réservez en ligne via notre partenaire Zenchef, ou appelez-nous directement.</p>
-
-        <!-- Zenchef Widget SDK (bouton flottant, pas d'auto-open) -->
-        <script>;(function (d, s, id) {const el = d.getElementsByTagName(s)[0]; if (d.getElementById(id) || el.parentNode == null) {return;} var js = d.createElement(s);  js.id = id; js.async = true; js.src = 'https://sdk.zenchef.com/v1/sdk.min.js';  el.parentNode.insertBefore(js, el); })(document, 'script', 'zenchef-sdk')</script>
-        <div class="zc-widget-config" data-restaurant="376209"></div>
-
-        <p class="text-small">Vous pouvez aussi nous appeler : <a href="tel:+33142601342">01 42 60 13 42</a></p>
-        <p class="text-small">Pour les réservations de plus de 8 personnes, contactez-nous par téléphone.</p>
+    <!-- ═══ LE QUARTIER ═══ -->
+    <section class="section fade-in" aria-label="Le quartier">
+      <div class="container">
+        <div class="visit-neighborhood">
+          <div class="visit-neighborhood__content">
+            <span class="eyebrow">À deux pas</span>
+            <h2>Le quartier des Tuileries</h2>
+            <span class="separator"></span>
+            <p>Le Florentin est situé au cœur de l'un des plus beaux quartiers de Paris — entre la Place de la Concorde, le jardin des Tuileries, la rue Saint-Honoré et la rue de Rivoli. Une adresse stratégique, idéale avant ou après la visite du Louvre, du musée de l'Orangerie ou d'une balade sur les Champs-Élysées.</p>
+            <a href="/le-quartier" class="btn btn--secondary">Découvrir le quartier</a>
+          </div>
+          <div class="visit-neighborhood__image">
+            <picture>
+              <source srcset="/assets/img/ambiance/tuileries-quartier-640w.webp 640w, /assets/img/ambiance/tuileries-quartier-1024w.webp 1024w" sizes="(min-width:768px) 50vw, 100vw" type="image/webp">
+              <img src="/assets/img/ambiance/tuileries-quartier-1024w.jpg"
+                   srcset="/assets/img/ambiance/tuileries-quartier-640w.jpg 640w, /assets/img/ambiance/tuileries-quartier-1024w.jpg 1024w"
+                   sizes="(min-width:768px) 50vw, 100vw"
+                   alt="Jardin des Tuileries, à deux pas du Florentin"
+                   loading="lazy">
+            </picture>
+          </div>
+        </div>
       </div>
     </section>
   </main>

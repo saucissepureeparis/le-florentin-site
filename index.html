@@ -74,6 +74,7 @@
         "logo": "https://leflorentinbistrot.com/assets/da/Le_Florentin_Logo-1-removebg-preview.png",
         "url": "https://leflorentinbistrot.com/",
         "telephone": "+33142601342",
+        "email": "brasserieleflorentin@gmail.com",
         "priceRange": "€€",
         "currenciesAccepted": "EUR",
         "paymentAccepted": "Cash, Credit Card, Visa, Mastercard, American Express",
@@ -127,8 +128,9 @@
               "@type": "MenuSection",
               "name": "Plats signatures",
               "hasMenuItem": [
-                {"@type":"MenuItem","name":"Confit de canard","description":"Cuisse confite, pommes sarladaises, salade verte","suitableForDiet":"https://schema.org/OmnivoreDiet"},
-                {"@type":"MenuItem","name":"Tartare de bœuf","description":"Assaisonné à la main, frites maison, jaune d'œuf fermier","suitableForDiet":"https://schema.org/OmnivoreDiet"}
+                {"@type":"MenuItem","name":"Côte de bœuf pour deux","description":"1,2 kg à partager, sauce au poivre, frites maison","suitableForDiet":"https://schema.org/OmnivoreDiet"},
+                {"@type":"MenuItem","name":"Confit de canard maison","description":"Cuisse confite, jus réduit, pommes grenailles","suitableForDiet":"https://schema.org/OmnivoreDiet"},
+                {"@type":"MenuItem","name":"Tartare de bœuf","description":"Assaisonné à la main, frites maison, salade","suitableForDiet":"https://schema.org/OmnivoreDiet"}
               ]
             }
           ]
@@ -388,73 +390,48 @@
     </section>
 
     <!-- ═══ PLATS SIGNATURES ═══ -->
-    <section class="section section--alt fade-in" aria-label="Nos plats signatures">
+    <section id="classiques" class="section section--alt fade-in" aria-label="Nos plats signatures">
       <div class="container">
         <div class="section__header">
           <h2>Les classiques du Florentin</h2>
           <span class="separator"></span>
         </div>
-        <div class="dishes-grid">
-          <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="dish-card fade-in-child">
-            <div class="dish-card__image">
+        <div class="classics">
+          <figure class="classics__photo fade-in-child">
+            <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener">
               <picture>
-                <source srcset="/assets/img/carte/cote-boeuf-cuisine-640w.webp 640w, /assets/img/carte/cote-boeuf-cuisine-1024w.webp 1024w, /assets/img/carte/cote-boeuf-cuisine-1920w.webp 1920w" sizes="(max-width:768px) 50vw, 25vw" type="image/webp">
+                <source srcset="/assets/img/carte/cote-boeuf-cuisine-640w.webp 640w, /assets/img/carte/cote-boeuf-cuisine-1024w.webp 1024w, /assets/img/carte/cote-boeuf-cuisine-1920w.webp 1920w" sizes="(max-width:767px) 100vw, 42vw" type="image/webp">
                 <img src="/assets/img/carte/cote-boeuf-cuisine-1024w.jpg"
-                     alt="Escargots de Bourgogne, beurre d'ail et persil frais"
-                     width="640" height="640" loading="lazy" style="aspect-ratio:1/1;">
+                     srcset="/assets/img/carte/cote-boeuf-cuisine-640w.jpg 640w, /assets/img/carte/cote-boeuf-cuisine-1024w.jpg 1024w, /assets/img/carte/cote-boeuf-cuisine-1920w.jpg 1920w"
+                     sizes="(max-width:767px) 100vw, 42vw"
+                     alt="Côte de bœuf du Florentin dressée en cuisine, frites maison au premier plan"
+                     width="640" height="960" loading="lazy">
               </picture>
-            </div>
-            <div class="dish-card__info">
-              <h3 class="dish-card__name">Escargots de Bourgogne</h3>
-              <p class="dish-card__desc">Beurre d'ail, persil frais, six pièces servies brûlantes</p>
-            </div>
-          </a>
-          <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="dish-card fade-in-child">
-            <div class="dish-card__image">
-              <picture>
-                <source srcset="/assets/img/carte/pain-planche-640w.webp 640w, /assets/img/carte/pain-planche-1024w.webp 1024w, /assets/img/carte/pain-planche-1920w.webp 1920w" sizes="(max-width:768px) 50vw, 25vw" type="image/webp">
-                <img src="/assets/img/carte/pain-planche-1024w.jpg"
-                     alt="Soupe à l'oignon gratinée, oignons caramélisés et comté fondu"
-                     width="640" height="640" loading="lazy" style="aspect-ratio:1/1;">
-              </picture>
-            </div>
-            <div class="dish-card__info">
-              <h3 class="dish-card__name">Soupe à l'oignon gratinée</h3>
-              <p class="dish-card__desc">Oignons caramélisés, bouillon maison, comté fondu</p>
-            </div>
-          </a>
-          <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="dish-card fade-in-child">
-            <div class="dish-card__image">
-              <picture>
-                <source srcset="/assets/img/ambiance/verre-florentin-640w.webp 640w, /assets/img/ambiance/verre-florentin-1024w.webp 1024w, /assets/img/ambiance/verre-florentin-1920w.webp 1920w" sizes="(max-width:768px) 50vw, 25vw" type="image/webp">
-                <img src="/assets/img/ambiance/verre-florentin-1024w.jpg"
-                     srcset="/assets/img/ambiance/verre-florentin-640w.jpg 640w, /assets/img/ambiance/verre-florentin-1024w.jpg 1024w, /assets/img/ambiance/verre-florentin-1920w.jpg 1920w"
-                     sizes="(max-width:768px) 50vw, 25vw"
-                     alt="Confit de canard, pommes sarladaises et salade verte"
-                     width="640" height="640" loading="lazy" style="aspect-ratio:1/1;">
-              </picture>
-            </div>
-            <div class="dish-card__info">
-              <h3 class="dish-card__name">Confit de canard</h3>
-              <p class="dish-card__desc">Cuisse confite, pommes sarladaises, salade verte</p>
-            </div>
-          </a>
-          <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="dish-card fade-in-child">
-            <div class="dish-card__image">
-              <picture>
-                <source srcset="/assets/img/ambiance/clientes-dejeuner-640w.webp 640w, /assets/img/ambiance/clientes-dejeuner-1024w.webp 1024w, /assets/img/ambiance/clientes-dejeuner-1920w.webp 1920w" sizes="(max-width:768px) 50vw, 25vw" type="image/webp">
-                <img src="/assets/img/ambiance/clientes-dejeuner-1024w.jpg"
-                     srcset="/assets/img/ambiance/clientes-dejeuner-640w.jpg 640w, /assets/img/ambiance/clientes-dejeuner-1024w.jpg 1024w, /assets/img/ambiance/clientes-dejeuner-1920w.jpg 1920w"
-                     sizes="(max-width:768px) 50vw, 25vw"
-                     alt="Tartare de bœuf, frites maison et jaune d'œuf fermier"
-                     width="640" height="640" loading="lazy" style="aspect-ratio:1/1;">
-              </picture>
-            </div>
-            <div class="dish-card__info">
-              <h3 class="dish-card__name">Tartare de bœuf</h3>
-              <p class="dish-card__desc">Assaisonné à la main, frites maison, jaune d'œuf fermier</p>
-            </div>
-          </a>
+            </a>
+            <figcaption>La côte de bœuf pour deux, dressée en cuisine</figcaption>
+          </figure>
+          <ul class="classics__list">
+            <li class="classics__item fade-in-child">
+              <h3>Côte de bœuf pour deux</h3>
+              <p>1,2 kg à partager, sauce au poivre, frites maison</p>
+            </li>
+            <li class="classics__item fade-in-child">
+              <h3>Escargots de Bourgogne</h3>
+              <p>Beurre d'ail, persil frais, six pièces servies brûlantes</p>
+            </li>
+            <li class="classics__item fade-in-child">
+              <h3>Soupe à l'oignon gratinée</h3>
+              <p>Oignons caramélisés, bouillon maison, comté fondu</p>
+            </li>
+            <li class="classics__item fade-in-child">
+              <h3>Tartare de bœuf</h3>
+              <p>Assaisonné à la main, frites maison, salade</p>
+            </li>
+            <li class="classics__item fade-in-child">
+              <h3>Confit de canard maison</h3>
+              <p>Cuisse confite, jus réduit, pommes grenailles</p>
+            </li>
+          </ul>
         </div>
         <div style="text-align:center; margin-top:var(--space-lg);">
           <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="btn btn--secondary">Voir la carte complète</a>
@@ -604,6 +581,7 @@
       <div class="footer__nav">
         <h4>Contact</h4>
         <a href="tel:+33142601342">01 42 60 13 42</a>
+        <a href="mailto:brasserieleflorentin@gmail.com" style="overflow-wrap:anywhere;">brasserieleflorentin@gmail.com</a>
         <p style="font-size:0.85rem; color:rgba(250,246,239,0.7);">10 Rue Saint-Florentin<br>75001 Paris</p>
         <p style="font-size:0.85rem; color:rgba(250,246,239,0.7);">Ouvert 7j/7, 7h – 23h</p>
         <div class="footer__social" style="display:flex; gap:0.75rem; margin-top:0.75rem;">

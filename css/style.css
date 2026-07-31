@@ -746,6 +746,84 @@ body:not(:has(.hero)) .nav {
   margin-bottom: 0;
 }
 
+/* ─── CLASSIQUES (photo signature + liste de plats) ───
+   Une seule photo de plat existe dans la banque d'images (côte de bœuf) :
+   les autres classiques sont listés sans photo tant que le shoot plats
+   n'a pas eu lieu — ne jamais associer une photo à un autre plat. */
+.classics {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.classics__photo {
+  margin: 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  aspect-ratio: 4/5;
+}
+
+.classics__photo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.classics__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.classics__photo figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: var(--space-lg) var(--space-md) var(--space-sm);
+  background: linear-gradient(transparent, rgba(26, 8, 8, 0.78));
+  color: var(--creme);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.classics__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.classics__item {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--gris-clair);
+}
+
+.classics__item:last-child {
+  border-bottom: none;
+}
+
+.classics__item h3 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--rouge-profond);
+  margin-bottom: 0.2rem;
+}
+
+.classics__item p {
+  font-size: 0.9rem;
+  color: var(--gris-texte);
+  margin-bottom: 0;
+}
+
 /* ─── QUOTE / IMMERSIVE SECTION ─── */
 .quote-section {
   position: relative;
@@ -1422,6 +1500,14 @@ body:not(:has(.hero)) .nav {
   .story--reverse { flex-direction: row-reverse; }
 
   .dishes-grid { grid-template-columns: repeat(4, 1fr); }
+
+  .classics {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: var(--space-xl);
+    align-items: stretch;
+  }
+  .classics__photo { aspect-ratio: auto; min-height: 520px; }
+  .classics__item { padding: var(--space-md) 0; }
 
   .quote-section__text { font-size: 1.3rem; }
   .quote-section__actions { flex-direction: row; }

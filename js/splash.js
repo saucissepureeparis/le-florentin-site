@@ -97,7 +97,7 @@
         'position:fixed;inset:0;z-index:9999;',
         'display:flex;align-items:center;justify-content:center;',
         'padding:1.5rem;',
-        'background:radial-gradient(ellipse at center,#2a1818 0%,#1a0f0f 55%,#0d0707 100%);',
+        'background:radial-gradient(ellipse at center,#8B1A1A 0%,#5C0E0E 60%,#3D0808 100%);',
         'opacity:0;animation:flSplashIn 700ms ease-out forwards;',
       '}',
       '.fl-splash.is-leaving{animation:flSplashOut 800ms ease-in forwards;}',
@@ -116,44 +116,34 @@
         'opacity:0;transform:translateY(-12px);pointer-events:none;',
       '}',
 
-      /* Wordmark "Le Florentin" en script */
+      /* Logo Le Florentin — lockup officiel (script + "Bistro Parisien" alignés) */
       '.fl-splash__brand{',
-        'font-family:"Creato Display",Georgia,serif;font-style:italic;font-weight:700;',
-        'font-style:italic;font-weight:700;',
-        'font-size:clamp(2.4rem,8vw,4.2rem);',
-        'color:#FAF6EF;line-height:1;',
-        'letter-spacing:.005em;',
-        'margin:0 0 .9rem;',
+        'margin:0 0 1.7rem;',
         'opacity:0;transform:translateY(14px);',
         'animation:flFadeUp 1000ms cubic-bezier(.16,1,.3,1) 250ms forwards;',
       '}',
+      '.fl-splash__brand img{',
+        'display:block;margin:0 auto;',
+        'width:clamp(240px,58vw,430px);height:auto;',
+      '}',
 
-      /* Tagline avec liserés or */
-      '.fl-splash__tagline{',
-        'font-family:"Inter",system-ui,sans-serif;',
-        'font-size:.7rem;font-weight:500;',
-        'letter-spacing:.32em;text-transform:uppercase;',
-        'color:rgba(250,246,239,.55);',
-        'margin:0 0 2.6rem;',
+      /* Liseré or sous le logo */
+      '.fl-splash__rule{',
+        'width:56px;height:1px;background:rgba(201,169,78,.8);',
+        'margin:0 auto 2.6rem;',
         'opacity:0;animation:flFadeIn 1000ms ease-out 500ms forwards;',
       '}',
-      '.fl-splash__tagline::before,.fl-splash__tagline::after{',
-        'content:"";display:inline-block;vertical-align:middle;',
-        'width:34px;height:1px;background:rgba(201,169,78,.55);',
-        'margin:0 1em;',
-      '}',
 
-      /* Grille de langues */
+      /* Langues — rangées centrées (4+3 desktop, 2+2+2+1 mobile) */
       '.fl-splash__langs{',
         'list-style:none;margin:0 auto;padding:0;',
-        'display:grid;grid-template-columns:repeat(2,minmax(0,1fr));',
-        'gap:.2rem .8rem;max-width:440px;',
+        'display:flex;flex-wrap:wrap;justify-content:center;',
+        'gap:.2rem 0;max-width:440px;',
       '}',
+      '.fl-splash__langs li{flex:0 0 50%;}',
       '@media(min-width:720px){',
-        '.fl-splash__langs{',
-          'grid-template-columns:repeat(4,minmax(0,1fr));',
-          'max-width:none;gap:.4rem 1.6rem;',
-        '}',
+        '.fl-splash__langs{max-width:820px;gap:.4rem 0;}',
+        '.fl-splash__langs li{flex:0 0 24%;}',
       '}',
 
       /* Bouton langue : nom dans son écriture native */
@@ -177,7 +167,7 @@
         'transition:width 400ms cubic-bezier(.16,1,.3,1);',
       '}',
       '.fl-splash__lang:hover,.fl-splash__lang:focus-visible{',
-        'color:#C9A94E;outline:none;',
+        'color:#E8D48B;outline:none;',
       '}',
       '.fl-splash__lang:hover::after,.fl-splash__lang:focus-visible::after{',
         'width:55%;',
@@ -244,15 +234,21 @@
     var inner = document.createElement('div');
     inner.className = 'fl-splash__inner';
 
-    // Wordmark
+    // Logo officiel — le lockup contient déjà "Bistro Parisien" aligné
     var brand = document.createElement('h1');
     brand.className = 'fl-splash__brand';
-    brand.textContent = 'Le Florentin';
+    var logo = document.createElement('img');
+    logo.src = '/assets/da/Le_Florentin_Logo-1-removebg-preview.png';
+    logo.alt = 'Le Florentin — Bistro Parisien';
+    logo.width = 785;
+    logo.height = 318;
+    logo.decoding = 'async';
+    brand.appendChild(logo);
 
-    // Tagline avec ornements or
-    var tagline = document.createElement('p');
-    tagline.className = 'fl-splash__tagline';
-    tagline.textContent = 'Bistrot Parisien';
+    // Liseré or de séparation
+    var tagline = document.createElement('div');
+    tagline.className = 'fl-splash__rule';
+    tagline.setAttribute('aria-hidden', 'true');
 
     // Grille de langues
     var list = document.createElement('ul');

@@ -61,6 +61,7 @@
     "image": "https://leflorentinbistrot.com/assets/img/facade/facade-nuit-1920w.jpg",
     "url": "https://leflorentinbistrot.com",
     "telephone": "+33142601342",
+    "email": "brasserieleflorentin@gmail.com",
     "priceRange": "€€",
     "servesCuisine": ["French", "Bistro", "Classic French"],
     "address": {
@@ -211,73 +212,48 @@
     </section>
 
     <!-- PRATOS EMBLEMÁTICOS -->
-    <section class="section section--alt fade-in" aria-label="Nossos pratos emblemáticos">
+    <section id="classiques" class="section section--alt fade-in" aria-label="Nossos pratos emblemáticos">
       <div class="container">
         <div class="section__header">
           <h2>Os clássicos do Le Florentin</h2>
           <span class="separator"></span>
         </div>
-        <div class="dishes-grid">
-          <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="dish-card fade-in-child">
-            <div class="dish-card__image">
+        <div class="classics">
+          <figure class="classics__photo fade-in-child">
+            <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener">
               <picture>
-                <source srcset="/assets/img/carte/cote-boeuf-cuisine-640w.webp 640w, /assets/img/carte/cote-boeuf-cuisine-1024w.webp 1024w, /assets/img/carte/cote-boeuf-cuisine-1920w.webp 1920w" sizes="(max-width:768px) 50vw, 25vw" type="image/webp">
+                <source srcset="/assets/img/carte/cote-boeuf-cuisine-640w.webp 640w, /assets/img/carte/cote-boeuf-cuisine-1024w.webp 1024w, /assets/img/carte/cote-boeuf-cuisine-1920w.webp 1920w" sizes="(max-width:767px) 100vw, 42vw" type="image/webp">
                 <img src="/assets/img/carte/cote-boeuf-cuisine-1024w.jpg"
-                     alt="Escargots de Bourgogne, manteiga de alho e salsa fresca"
-                     width="640" height="640" loading="lazy" style="aspect-ratio:1/1;">
+                     srcset="/assets/img/carte/cote-boeuf-cuisine-640w.jpg 640w, /assets/img/carte/cote-boeuf-cuisine-1024w.jpg 1024w, /assets/img/carte/cote-boeuf-cuisine-1920w.jpg 1920w"
+                     sizes="(max-width:767px) 100vw, 42vw"
+                     alt="Côte de bœuf do Le Florentin finalizada na cozinha, batatas fritas caseiras em primeiro plano"
+                     width="640" height="960" loading="lazy">
               </picture>
-            </div>
-            <div class="dish-card__info">
-              <div class="dish-card__name">Escargots de Bourgogne</div>
-              <p class="dish-card__desc">Manteiga de alho, salsa fresca, seis unidades servidas bem quentes</p>
-            </div>
-          </a>
-          <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="dish-card fade-in-child">
-            <div class="dish-card__image">
-              <picture>
-                <source srcset="/assets/img/carte/pain-planche-640w.webp 640w, /assets/img/carte/pain-planche-1024w.webp 1024w, /assets/img/carte/pain-planche-1920w.webp 1920w" sizes="(max-width:768px) 50vw, 25vw" type="image/webp">
-                <img src="/assets/img/carte/pain-planche-1024w.jpg"
-                     alt="Sopa de cebola gratinada, cebolas caramelizadas e queijo comté derretido"
-                     width="640" height="640" loading="lazy" style="aspect-ratio:1/1;">
-              </picture>
-            </div>
-            <div class="dish-card__info">
-              <div class="dish-card__name">Sopa de cebola gratinada</div>
-              <p class="dish-card__desc">Cebolas caramelizadas, caldo caseiro, queijo comté derretido</p>
-            </div>
-          </a>
-          <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="dish-card fade-in-child">
-            <div class="dish-card__image">
-              <picture>
-                <source srcset="/assets/img/ambiance/verre-florentin-640w.webp 640w, /assets/img/ambiance/verre-florentin-1024w.webp 1024w, /assets/img/ambiance/verre-florentin-1920w.webp 1920w" sizes="(max-width:768px) 50vw, 25vw" type="image/webp">
-                <img src="/assets/img/ambiance/verre-florentin-1024w.jpg"
-                     srcset="/assets/img/ambiance/verre-florentin-640w.jpg 640w, /assets/img/ambiance/verre-florentin-1024w.jpg 1024w, /assets/img/ambiance/verre-florentin-1920w.jpg 1920w"
-                     sizes="(max-width:768px) 50vw, 25vw"
-                     alt="Confit de pato, batatas sarladaises e salada verde"
-                     width="640" height="640" loading="lazy" style="aspect-ratio:1/1;">
-              </picture>
-            </div>
-            <div class="dish-card__info">
-              <div class="dish-card__name">Confit de pato</div>
-              <p class="dish-card__desc">Coxa confitada, batatas sarladaises, salada verde</p>
-            </div>
-          </a>
-          <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="dish-card fade-in-child">
-            <div class="dish-card__image">
-              <picture>
-                <source srcset="/assets/img/ambiance/clientes-dejeuner-640w.webp 640w, /assets/img/ambiance/clientes-dejeuner-1024w.webp 1024w, /assets/img/ambiance/clientes-dejeuner-1920w.webp 1920w" sizes="(max-width:768px) 50vw, 25vw" type="image/webp">
-                <img src="/assets/img/ambiance/clientes-dejeuner-1024w.jpg"
-                     srcset="/assets/img/ambiance/clientes-dejeuner-640w.jpg 640w, /assets/img/ambiance/clientes-dejeuner-1024w.jpg 1024w, /assets/img/ambiance/clientes-dejeuner-1920w.jpg 1920w"
-                     sizes="(max-width:768px) 50vw, 25vw"
-                     alt="Tartare de vitela, batatas fritas caseiras e gema de ovo caipira"
-                     width="640" height="640" loading="lazy" style="aspect-ratio:1/1;">
-              </picture>
-            </div>
-            <div class="dish-card__info">
-              <div class="dish-card__name">Tartare de vitela</div>
-              <p class="dish-card__desc">Temperado à mão, batatas fritas caseiras, gema de ovo caipira</p>
-            </div>
-          </a>
+            </a>
+            <figcaption>Nossa côte de bœuf para dois, finalizada na cozinha</figcaption>
+          </figure>
+          <ul class="classics__list">
+            <li class="classics__item fade-in-child">
+              <h3>Côte de bœuf para dois</h3>
+              <p>1,2 kg para compartilhar, molho de pimenta, batatas fritas caseiras</p>
+            </li>
+            <li class="classics__item fade-in-child">
+              <h3>Escargots de Bourgogne</h3>
+              <p>Manteiga de alho, salsa fresca, seis unidades servidas bem quentes</p>
+            </li>
+            <li class="classics__item fade-in-child">
+              <h3>Sopa de cebola gratinada</h3>
+              <p>Cebolas caramelizadas, caldo caseiro, queijo comté derretido</p>
+            </li>
+            <li class="classics__item fade-in-child">
+              <h3>Tartare de vitela</h3>
+              <p>Temperado à mão, batatas fritas caseiras, salada verde</p>
+            </li>
+            <li class="classics__item fade-in-child">
+              <h3>Confit de pato da casa</h3>
+              <p>Coxa confitada, molho reduzido, batatas grenaille</p>
+            </li>
+          </ul>
         </div>
         <div style="text-align:center; margin-top:var(--space-lg);">
           <a href="https://menuonline.fr/leflorentin/carte-restaurant" target="_blank" rel="noopener" class="btn btn--secondary">Ver o cardápio completo</a>
@@ -382,6 +358,7 @@
       <div class="footer__nav">
         <h4>Contato</h4>
         <a href="tel:+33142601342">01 42 60 13 42</a>
+        <a href="mailto:brasserieleflorentin@gmail.com" style="overflow-wrap:anywhere;">brasserieleflorentin@gmail.com</a>
         <p style="font-size:0.85rem; color:rgba(250,246,239,0.7);">10 Rue Saint-Florentin<br>75001 Paris</p>
         <p style="font-size:0.85rem; color:rgba(250,246,239,0.7);">Aberto todos os dias — Serviço contínuo</p>
       </div>
